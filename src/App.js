@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+// you should not need to modify Hero or Content
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <main className='App'>
+        <section className='Hero'>
+          <h1 className='Title'>Hero</h1>
+        </section>
+        <section className='Content'>
+          <h1 className='Title'>Page Content</h1>
+        </section>
+      </main>
     );
   }
 }
